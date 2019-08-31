@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Facebook Mock Log In page</title>
+</head>
+<style>
+section {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+}
+
+div {
+  background-color: #3B5998;
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+button {
+  background-color: #4E71BA;
+  color: white;
+  border: none;
+}
+
+a {
+  color: white;
+}
+
+header {
+  font-family: "Lucida grande";
+  font-size: 60px;
+  text-align: left;
+}
+
+
+</style>
+
+
+<body>
+<div>
+  <header>facebook</header><br><br>
+</div>
+
+
+<!-- Inline block for "section" above means that the 1st "section" in this "div" is going to stay side by side with the 2nd "section" in this "div", notice that the inputs
+for this "div" were classed and then given the "block" value while the "input" below wasn't classed. This ensures that the inputs here (for "E&P") go to the next "line" in both
+cases -->
+
+<form action="">
+  <div>
+    <section>
+    <label for="email or phone">
+      Email or phone
+      <input type="email" id="email" name="email-phone" class="input">
+    </label>
+  </section>
+
+  <section>
+    <label for="password">
+      Password
+      <input type="password" id="password" name="password" class="input">
+    </label>
+  </section>
+
+  <section>
+    <button>Log In</button>
+  </section>
+</div>
+
+<!-- Inline block for "section" above means that the 1st "section" in this "div" is going to stay side by side with the 2nd "section" in this "div" notice that the inputs
+for the above "div" were classed and then given the "block" value while the "input" here wasn't classed. this ensures that the "input" here (for checkbox) stays right next to "keep me
+me logged in" instead of going to "a" new "line" as you'll see for the inputs above -->
+
+<div>
+  <section>
+    <input type="checkbox" id="keep logged in">Keep me logged in
+</section>
+
+<section class="password">
+  <a href="#">Forgot your password?</a>
+</section>
+</div>
+</form>
+<p>I want to make changes just to see how GIT works</p>
+
+</body>
+</html>
